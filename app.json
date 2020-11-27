@@ -1,0 +1,12 @@
+{
+  "name": "CatetinMobile",
+  "displayName": "CatetinMobile",
+  "expo": {
+    "name": "CatetinMobile",
+    "slug": "CatetinMobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
