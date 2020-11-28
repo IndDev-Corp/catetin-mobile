@@ -37,7 +37,7 @@ const BerandaScreen = () => {
         </View>
         <View style={styles.cell}>
           <View>
-            <Image style={styles.image} source={require('/assets/ikon.jpg')}/>
+            <Image style={styles.image} source={require('../assets/images/ikon.jpg')}/>
           </View>
           <View>
             <Text style={styles.pembeli}>Aris Jember</Text>
@@ -46,7 +46,7 @@ const BerandaScreen = () => {
         </View>
         <View style={styles.cell}>
           <View>
-            <Image style={styles.image} source={require('/assets/ikon.jpg')}/>
+            <Image style={styles.image} source={require('../assets/images/ikon.jpg')}/>
           </View>
           <View>
             <Text style={styles.pembeli}>Aris Jember</Text>
@@ -55,7 +55,7 @@ const BerandaScreen = () => {
         </View>
         <View style={styles.cell}>
           <View>
-            <Image style={styles.image} source={require('/assets/ikon.jpg')}/>
+            <Image style={styles.image} source={require('../assets/images/ikon.jpg')}/>
           </View>
           <View>
             <Text style={styles.pembeli}>Aris Jember</Text>
@@ -64,7 +64,7 @@ const BerandaScreen = () => {
         </View>
         <View style={styles.cell}>
           <View>
-            <Image style={styles.image} source={require('/assets/ikon.jpg')}/>
+            <Image style={styles.image} source={require('../assets/images/ikon.jpg')}/>
           </View>
           <View>
             <Text style={styles.pembeli}>Aris Jember</Text>
