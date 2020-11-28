@@ -2,8 +2,9 @@ import * as React from "react";
 import { Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import BerandaScreen from "./screens/BerandaScreen";
+import KategoriScreen from "./screens/KategoriScreen";
 
 function SettingsScreen() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
                 : "ios-information-circle-outline";
             } else if (route.name === "LainnyaScreen") {
               iconName = focused ? "ios-list-box" : "ios-list";
+            } else if (route.name === "KategoriScreen") {
+              iconName = focused ? "cubes" : "cubes";
+              return <FontAwesome name={iconName} size={size} color={color} />;
             }
 
             // You can return any component that you like here!
@@ -40,8 +44,18 @@ export default function App() {
           inactiveTintColor: "gray",
         }}
       >
-        <Tab.Screen name="BerandaScreen" component={BerandaScreen} />
+        <Tab.Screen
+          options={{
+            tabBarLabel: "Beranda",
+            tabBarIcon: ({ color, size }) => (
+              <FontAwesome name={"home"} color={color} size={size} />
+            ),
+          }}
+          name="BerandaScreen"
+          component={BerandaScreen}
+        />
         <Tab.Screen name="LainnyaScreen" component={SettingsScreen} />
+        <Tab.Screen name="KategoriScreen" component={KategoriScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
