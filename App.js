@@ -5,14 +5,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import BerandaScreen from "./screens/BerandaScreen";
 import KategoriScreen from "./screens/KategoriScreen";
+import LainnyaScreen from "./screens/LainnyaScreen";
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
 
 const Tab = createBottomTabNavigator();
 
@@ -54,7 +48,7 @@ export default function App() {
           name="BerandaScreen"
           component={BerandaScreen}
         />
-        <Tab.Screen name="LainnyaScreen" component={SettingsScreen} />
+        <Tab.Screen name="LainnyaScreen" component={LainnyaScreen} />
         <Tab.Screen name="KategoriScreen" component={KategoriScreen} />
       </Tab.Navigator>
     </NavigationContainer>
