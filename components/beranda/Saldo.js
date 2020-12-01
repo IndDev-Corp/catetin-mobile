@@ -1,9 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { FontAwesome } from '@expo/vector-icons';
 
 const Saldo = ({ saldo }) => {
   return (
     <View style={styles.cardMain}>
+      <FontAwesome name="money" size={24} color="white" style={{marginRight:5}} />
       <Text style={styles.main1}>Saldo</Text>
       <Text style={styles.main2}>Rp{saldo}</Text>
     </View>
@@ -18,9 +20,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 4,
     marginHorizontal: 3,
-    marginVertical: 10,
+    marginVertical: 5,
     marginBottom: 2,
-    backgroundColor: "#4169E1",
+    backgroundColor: "#37afde",
     flexDirection: "row",
   },
   main1: {
