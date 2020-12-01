@@ -6,7 +6,7 @@ import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import BerandaScreen from "./screens/BerandaScreen";
 import KategoriScreen from "./screens/KategoriScreen";
 import LainnyaScreen from "./screens/LainnyaScreen";
-
+import ProdukScreen from "./screens/ProdukScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -24,7 +24,7 @@ export default function App() {
                 : "ios-information-circle-outline";
             } else if (route.name === "LainnyaScreen") {
               iconName = focused ? "ios-list-box" : "ios-list";
-            } else if (route.name === "KategoriScreen") {
+            } else if (route.name === "ProdukScreen") {
               iconName = focused ? "cubes" : "cubes";
               return <FontAwesome name={iconName} size={size} color={color} />;
             }
@@ -49,7 +49,8 @@ export default function App() {
           component={BerandaScreen}
         />
         <Tab.Screen name="LainnyaScreen" component={LainnyaScreen} />
-        <Tab.Screen name="KategoriScreen" component={KategoriScreen} />
+        <Tab.Screen name="ProdukScreen" component={ProdukScreen} />
+        {/* <Tab.Screen name="KategoriScreen" component={KategoriScreen} /> */}
       </Tab.Navigator>
     </NavigationContainer>
   );
