@@ -7,6 +7,7 @@ import BerandaScreen from "./screens/BerandaScreen";
 import KategoriScreen from "./screens/KategoriScreen";
 import LainnyaScreen from "./screens/LainnyaScreen";
 import ProdukScreen from "./screens/ProdukScreen";
+import SliderScreen from "./screens/SliderScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -48,7 +49,7 @@ export default function App() {
           name="BerandaScreen"
           component={BerandaScreen}
         />
-        <Tab.Screen name="LainnyaScreen" component={LainnyaScreen} />
+        <Tab.Screen name="LainnyaScreen" component={SliderScreen} />
         <Tab.Screen name="ProdukScreen" component={ProdukScreen} />
         {/* <Tab.Screen name="KategoriScreen" component={KategoriScreen} /> */}
       </Tab.Navigator>
