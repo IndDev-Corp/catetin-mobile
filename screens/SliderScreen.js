@@ -15,13 +15,15 @@ const styles = StyleSheet.create({
     marginBottom: 35,
     textAlign: "center",
     fontSize: 20,
-    fontWeight: 700
+    fontWeight: 600
   },
   image: {
     height: 200,
     width: 100,
-    // borderRadius: 25,
-    // marginLeft: 20,
+  },
+  image2: {
+    height: 200,
+    width: 200,
   },
   desc: {
     textAlign: "center",
@@ -54,13 +56,14 @@ export default class SliderScreen extends React.Component {
           <View style={{flex:1}}>
               <View style={{flex:1}}>
                   <Swiper
-                    from={1}
+                    from={0}
                     minDistanceForAction={0.1}
                     controlsProps={{
                       dotsTouchable: true,
                       prevPos: 'left',
                       nextPos: 'right',
                       nextTitle: '',
+                      dotsWrapperStyle: { marginBottom: 60, marginRight: 230 },
                       nextTitleStyle: { color: 'red', fontSize: 24, fontWeight: '500' },
                       PrevComponent: ({ onPress }) => (
                         <TouchableOpacity onPress={onPress}>
@@ -73,7 +76,7 @@ export default class SliderScreen extends React.Component {
                   >
                       <View style={{flex:1,alignItems:"center",justifyContent:"center",backgroundColor:"white"}}>
                           <View style={styles.container}>
-                            <Text style={styles.main}>Kenalin Catetin</Text>
+                            <Text style={styles.main}>Kenalin Catet<Text style={{ fontWeight:800 }}></Text></Text>
                             <View style={{justifyContent:"center", alignItems:"center"}}>
                               <Image style={styles.image} source={require("./../assets/intro/imageA.png")}/>
                             </View>
@@ -117,7 +120,7 @@ export default class SliderScreen extends React.Component {
                           <View style={styles.container}>
                             <Text style={styles.main}>Fakta Mencatat</Text>
                             <View style={{justifyContent:"center", alignItems:"center"}}>
-                              <Image style={styles.image} source={require("./../assets/intro/imageB.png")}/>
+                              <Image style={styles.image2} source={require("./../assets/intro/imageB.png")}/>
                             </View>
                               <Text style={styles.desc}>
                               Percaya gak sih, kalau dengan mencatat semakin mempermudah kita untuk berbisnis dan bertransaksi 
